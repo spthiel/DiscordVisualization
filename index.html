@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Discord messages</title>
+		<script type="application/javascript" src="setup.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="formmodal">
+			<form onsubmit="onUpload(this.files);return false">
+				<label>Select messages directory</label>
+				<input name="files" type="file" id="ctrl" webkitdirectory directory multiple/>
+				<input type="submit">
+			</form>
+		</div>
+		<div id="body" hidden>
+			<div id="leftside">
+
+			</div>
+			<div id="placeholder"></div>
+			<div id="page">
+				<div id="content">
+					<div class="row">
+						<span class="name">&nbsp;</span>
+						<div class="graph">
+							<span style="float:left" id="start"></span>
+							<span style="float:right" id="end"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
